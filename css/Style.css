@@ -1,0 +1,279 @@
+body{
+  background: black;
+  font-family: "HLD",sans-serif;
+}
+.corpo {
+  min-width: 360px;
+}
+.gamename {
+  animation: fadeIN 1.5s;
+}
+/* PAG 1 */
+.video{
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: 50%;
+   z-index: -100;
+   position: fixed;
+}
+.videoBG {
+    object-fit: cover;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    min-width: 100%;
+    position: fixed;
+    top:0;
+    z-index: -999;
+    filter: blur(2px);
+}
+/* OVERLAY */
+.overlay {
+  width: 0%;
+  height: 100%;
+  background-color: rgba(0,0,0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow-x: hidden;
+  transition: 1.5s ease;
+}
+.overlay a {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #ff0043;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #900429;
+}
+.overlay-content {
+  position: relative;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 1s;
+}
+/* PAG 2 */
+.info {
+  margin-top:1300px;
+  width: 100%;
+  height: auto;
+  background-image: url("../img/Oentrata.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-top: solid 5px black;
+}
+.quadrati{
+  width: 400px;
+  height: 300px;
+  background-color: red;
+  margin-top: 500px;
+  padding-left: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px black;
+  vertical-align: middle;
+  line-height: 300px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0 0 15px black;
+  position: relative;
+  z-index: 2;
+  transition: 1.5s ease;
+}
+.quadrati a{
+  text-decoration: none;
+  color: white;
+}
+.quadrati:hover {
+  transform: scale(1.1);
+}
+/*QUELLO DI SINISTRA*/
+#sx {
+  float: left;
+  background-image: url("../img/QD.png");
+  background-position: center;
+  background-size: 180%;
+  letter-spacing: 4px;
+  margin-bottom: 500px;
+}
+.tipo {
+  transform-origin: bottom left;
+  transform: scale(0.5);
+  position: absolute;
+  bottom: 75px;
+  left: 280px;
+  transition: 1.5s ease;
+}
+.quadrati:hover .tipo{
+  transform: scale(0.6);
+}
+/*QUELLO DI DESTRA*/
+#dx {
+  float: right;
+  text-align: center;
+  background-image: url("../img/QS.jpg");
+  background-position: center;
+  background-size: 180%;
+  letter-spacing: 6px;
+  margin-bottom: 0px;
+}
+.download {
+  transform-origin: bottom left;
+  transform: scale(0.45);
+  position: absolute;
+  bottom: 205px;
+  left: 250px;
+  transition: 1.5s ease;
+}
+.quadrati:hover .download{
+  transform: scale(0.55);
+}
+.downimgs {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+/**/
+.objs {
+  width: auto;
+  height: auto;
+  margin-top: -300px;
+  float: right;
+  opacity: 0;
+  position: relative;
+  z-index: 0;
+  transition: 1.5s ease;
+  letter-spacing: 3px;
+}
+.obj {
+  width: 400px;
+  height: 60px;
+  margin-top: 70px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 25px black;
+  transition: 0.5s ease;
+}
+.obj a {
+  text-decoration: none;
+  font-size: 9px;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  font-weight: bold;
+}
+.obj:hover {
+  transform: scale(1.1);
+}
+/* PAG 3 */
+.buy {
+  width: 100%;
+  height: auto;
+  padding-top: 400px;
+  padding-bottom: 400px;
+  background-image: url("../img/Obuy.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-top: solid 5px black;
+}
+.epic{
+  float: right;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 10px;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  background-color: black;
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* EXTRA + MEDIA */
+@font-face {
+  font-family: "HLD";
+  src: url("../fonts/HLD.ttf");
+}
+@keyframes fadeIN {
+  from {opacity:0;}
+  to{opacity: 100;}
+}
+@media all and (min-width: 1024px){
+  .Isoverlayed {
+    display: none;
+  }
+}
+@media all and (max-width: 990px) {
+  .info {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .quadrati {
+    float:none!important;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1)!important;
+    font-size: 25px;
+  }
+  #sx {
+    margin-bottom: 200px;
+  }
+  .Isactive {
+    display: none;
+  }
+  .download{
+    transform: scale(0.45)!important;
+  }
+  .tipo{
+    transform: scale(0.5)!important;
+  }
+}
+@media all and (max-width: 768px) {
+  .buy {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .epic {
+    float: none;
+    margin-top: 150px;
+  }
+}
+@media all and (max-width: 450px) {
+  .tipo, .download {
+    display: none;
+  }
+  .quadrati {
+    width: auto;
+    padding-left: 0px;
+  }
+  .quadrati p {
+    text-align: center;
+  }
+}

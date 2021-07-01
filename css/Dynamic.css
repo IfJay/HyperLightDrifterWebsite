@@ -1,0 +1,31 @@
+/* DESKTOP */
+.dx-up{
+  margin-top: 350px;
+  transform: scale(1.1);
+}
+.download-up {
+  transform: scale(0.55);
+}
+.objs-up {
+  margin-top: 0px;
+  opacity: 1;
+}
+
+/* MOBILE */
+.overlay-true {
+  width: 100%;
+}
+.corpo-true {
+    overflow: hidden;
+}
+.OVlink-true {
+  opacity: 1;
+}
+.OVlink-false {
+  transition-delay: 0s;
+}
+
+/* NAVBAR */
+.navbar-OP {
+  background-color: rgba(0,0,0,0.7)!important;
+}

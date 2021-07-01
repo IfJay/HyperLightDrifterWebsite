@@ -1,0 +1,27 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  justify-content: center;
+  transition: 0.5s ease;
+}
+.bg-light{
+  background-color: rgba(0,0,0,0)!important;
+}
+.logo {
+  width: 90px;
+  height: 90px;
+  animation: fadeIN 1.5s;
+}
+/* EXTRAS + MEDIA */
+@keyframes fadeIN {
+  from {opacity:0;}
+  to{opacity: 100;}
+}
+@media all and (max-width: 990px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+}
